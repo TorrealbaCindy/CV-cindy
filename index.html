@@ -13,13 +13,14 @@
     <section class="inicio" id="inicio">
         <div class="contenido-seccion">
             <header>
-                <div class="nav-bar">
+                <div class="nav-bar" onclick="mostrarOcultarMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </div>
                 <nav id="nav" class="nav">
                     <a href="#inicio">Inicio</a>
                     <a href="#acercademi">Acerca de mi</a>
                     <a href="#habilidades">Habilidades</a>
+                    <a href="#resumen">Resumen</a>
                     <a href="#contacto">Contáctame</a>
                 </nav>
                 <!--<div class="logo">
@@ -28,24 +29,20 @@
             </header>
                 <div class="info">
                     <h1>CINDY TORREALBA</h1>
-                    <h2>ESTOY EN LA BÚSQUEDA DE MI PRIMERA EXPERIENCIA PROFESIONAL COMO DESARROLLADORA FRONT END, DESARROLLO DE PAǴINAS WEB A LA MEDIDA, APLICACIONES MÓVILES, APLICACIONES DE ESCRITORIO Y DISEÑO UX</h2>
-                <div class="redes">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
             </div>
             <div class="foto">
                 <img src="./img/WhatsApp Image 2023-06-08 at 9.23.19 PM.jpg" alt="imagen">
             </div>
-        </div>
+        
     </section>
 <!--SECCION ACERCA DE MI-->
     <section class="acercademi" id="acercademi">
+        <div class="info">
+            <h1>CINDY TORREALBA</h1>
+        </div>
         <div class="contenido-seccion">
             <h2 class="titulo-seccion">Acerca de mi</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quasi cum doloribus perferendis aut animi corrupti exercitationem, dicta itaque fugit, voluptatum minus harum aliquam rem vitae maxime numquam pariatur labore.</h3>
+            <h3>ME ENCUENTRO EN LA BÚSQUEDA DE MI PRIMERA EXPERIENCIA PROFESIONAL COMO DESARROLLADORA FRONT END, DESARROLLO DE PAǴINAS WEB A LA MEDIDA, APLICACIONES MÓVILES, APLICACIONES DE ESCRITORIO Y DISEÑO UX.</h3>
 
             <p class="especial">lorem</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eos deserunt commodi molestiae asperiores corrupti fuga, vel saepe iusto velit cumque sed, tempora maiores quis veniam ullam? Voluptate, voluptatibus aut?</p>
@@ -58,8 +55,8 @@
             </div>
             <div class="col">
                 <i class="fa-solid fa-location-dot"></i>
-                <span class="titulo-detalle">ubicación</span>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam maxime, error ratione labore aliquid quos porro fugiat nisi eos vitae earum inventore. Perspiciatis aliquid iste officiis, repellendus provident cum dignissimos?</p>
+                <span class="titulo-detalle">Ubicación</span>
+                <p>Buenos Aires - Argentina</p>
             </div>
             <div class="col">
                 <i class="fa-solid fa-flag"></i>
@@ -71,5 +68,194 @@
 
     </section>
 
-    </body>
+    <!--SECCIPN HABILIDADES-->
+    <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Mis habilidades</h2>
+
+        <div class="fila">
+            <div class="col">
+                <span>HTML/CSS</span>
+                <div class="cont-barra">
+                    <div class="barra" id="html">
+                        <!-- mediante js luego hay que generar 17 barras con la clase e-->
+                    </div>
+                    <span>98%</span>
+                   </div>
+                </div>
+            <div class="col">
+                <span>JAVASCRIPT</span>
+                <div class="cont-barra">
+                    <div class="barra" id="javascript">
+                        <!-- mediante js luego hay que generar 17 barras con la clase e-->
+                    </div>
+                    <span>70%</span>
+                    </div>
+                </div>
+            <div class="col">
+                    <span>WORDPRESS</span>
+                    <div class="cont-barra">
+                        <div class="barra" id="wordpress">
+                            <!-- mediante js luego hay que generar 17 barras con la clase e-->
+                            <div class="e"></div>
+                            </div>
+                            <span>80%</span>
+                        </div>
+                    </div>
+            <div class="col">
+                <span>ADOBE</span>
+                <div class="cont-barra">
+                    <div class="barra" id="Adobe">
+                        <!-- mediante js luego hay que generar 17 barras con la clase e-->
+                        <div class="e"></div>
+                        </div>
+                        <span>80%</span>
+                    </div>
+                </div>
+            <div class="col">
+                <span>FIGMA</span>
+                <div class="cont-barra">
+                    <div class="barra" id="Figma">
+                        <!-- mediante js luego hay que generar 17 barras con la clase e-->
+                        <div class="e"></div>
+                        </div>
+                        <span>90%</span>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION RESUMEN -->
+    <section class="resumen" id="resumen">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Resumen</h2>
+            <div class="info">
+                <div class="col">
+                    <span class="titulo">Formación</span>
+                    <table>
+                        <tr> <!--inicio de la fila-->
+                            <td class="datos"> <!--celda 1 de la fila-->
+                                <h3>2022 - 2023</h3>
+                            </td>
+                            <td rowspan="2" class="descripcion">
+                                Formación como Desarrolladora Web Front-End.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Desarrolladora Web</h4>
+                                <p>Oracle Next Education</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr> <!--inicio de la fila-->
+                            <td class="datos"> <!--celda 1 de la fila-->
+                                <h3>2022</h3>
+                            </td>
+                            <td rowspan="2" class="descripcion">
+                                Certificación como Desarrolladora Web Front-End. Programa Ingenias. Fundación YPF.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Desarrolladora Web</h4>
+                                <p>Fundación YPF</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr> <!--inicio de la fila-->
+                            <td class="datos"> <!--celda 1 de la fila-->
+                                <h3>2022 - 2023</h3>
+                            </td>
+                            <td rowspan="2" class="descripcion">
+                                Certificación de Diseño de Experiencia del Usuario (UX) de Google.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Diseñadora UX</h4>
+                                <p>Google</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col">
+                    <span class="titulo">Experiencia Laboral</span>
+                    <table>
+                        <tr> <!--inicio de la fila-->
+                            <td class="datos"> <!--celda 1 de la fila-->
+                                <h3>2 años</h3>
+                            </td>
+                            <td rowspan="2" class="descripcion">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis optio accusantium aliquid, qui culpa quidem excepturi mollitia odio! Eligendi, perspiciatis nemo.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Mercado Libre</h4>
+                                <p>Programadora</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr> <!--inicio de la fila-->
+                            <td class="datos"> <!--celda 1 de la fila-->
+                                <h3>1 año</h3>
+                            </td>
+                            <td rowspan="2" class="descripcion">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis optio accusantium aliquid, qui culpa quidem excepturi mollitia odio! Eligendi, perspiciatis nemo.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Diseñadora UX</h4>
+                                <p>Google</p>
+                            </td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-phone"></i> Teléfono
+                    </h2>
+                    <span class="info-contacto">221 - 3574292</span>
+                </div>
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-envelope"></i> Email
+                    </h2>
+                    <span class="info-contacto">torrealbacindy04@gmail.com</span>
+                </div>
+            <div class="col">
+                <h2>
+                    <i class="fa-solid fa-link"></i>
+                </h2>
+                <span class="info-contacto">cindytorrealba@ctorrealba.com</span>
+            </div>
+        </div>
+    </div>
+    <div class="redes">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+
+    </section>
+
+    <script src="./app.js"></script>
+</body>
 </html>

@@ -1,14 +1,15 @@
 /*importar fuentes*/
 
-@import url('https://fonts.googleapis.com/css2?family=Diplomata&family=Lato:wght@100;300;400;700&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100&family=Roboto:wght@100;300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Lato:wght@100;300;400;700&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/avenir');
 
 *{
-	font-family: Lato;
+	font-family: Avenir, sans-serif;
 	margin: 0;
 	padding: 0;
 }
 html{
+	width: 100%;
 	scroll-behavior: smooth;
 }
 
@@ -23,7 +24,7 @@ body{
 	background: url("../img/jackson-sophat-_t-l5FFH8VA-unsplash.jpg");
 	background-size: cover;
 	background-position: center center;
-	color: #333333;
+	color: #484848;
 }
 .inicio .contenido-seccion{
 	max-width: 1000px;
@@ -47,25 +48,29 @@ body{
 	text-align: left;
 	z-index: 99;
 	display: none;
+	border: 1px solid #484848;
 }
 .inicio .contenido-seccion header nav a{
+	text-transform: uppercase;
 	display: block;
-	color: #333333;
+	color: #484848;
 	text-decoration: none;
 	margin-bottom: 10px;
-	font-weight: bold;
-	font-size: 10px;
+	font-weight: normal;
+	font-size: 8px;
+	letter-spacing: 1px;
 }
+
 .inicio .contenido-seccion header .logo{
 	font-weight: bold;
 	font-size: 2rem;
-	font-family: Diplomata;
-	text-shadow: 0,0, 35px #333333;
+	font-family: 'Big Shoulders Display';
+	text-shadow: 0,0, 35px #484848;
 
 }
 .inicio .contenido-seccion header .logo .color{
 	color: #333;
-	font-family: Diplomata;
+	font-family: 'Big Shoulders Display';
 }
 .inicio .contenido-seccion header .nav-bar{
 	position: fixed;
@@ -86,47 +91,21 @@ body{
 .inicio .contenido-seccion .info{
 	padding-bottom: 130px;
 }
-.inicio .contenido-seccion .info h1{
-	font-size: 2rem;
-	letter-spacing: 5px;
-}
 
 .inicio .contenido-seccion .info h2{
 	font-weight: normal;
 	font-size: 15px;
 	margin-top:-10px;
-	letter-spacing: 2px;
 	padding-top: 15px;
 }
 
-.inicio .contenido-seccion .info .redes{
-	margin: 20px 0;
-}
-.inicio .contenido-seccion .info .redes a{
-	display: inline-block;
-	text-decoration: none;
-	background-color: #484848;
-	color: #FCE8ED;
-	border-radius: 50%;
-	width: 30px;
-	line-height: 30px;
-	margin: 0 5px;
-	transition: .3s;
-}
-
-.inicio .contenido-seccion .info .redes a:hover{
-	color: #FCE8ED;
-	background-color: #333333;
-	box-shadow: 0 0 30px #484848;
-}
 .inicio .contenido-seccion .foto{
 	position: relative;
 }
 .inicio .contenido-seccion .foto img{
-	max-width: 250px;
+	max-width: 500px;
 	height: 180px;
-	border-radius: 50%;
-	border: 1px solid #484848;
+	border-radius: 100%;
 	position: absolute;
 	left: 50%;
 	top: -100px;
@@ -136,9 +115,16 @@ body{
 /*SECCION ACERCA DE MI*/
 /*estilos generales*/
 .titulo-seccion{
-	font-family: Diplomata;
-	font-size: 1.5rem;
+	font-family: Big Shoulders Display;
+	font-size: 50px;
 	color: #333;
+}
+.acercademi .info h1{
+	font-size: 3rem;
+	letter-spacing: 5px;
+	font-family: Big Shoulders Display;
+	color: #333;
+
 }
 
 .acercademi{
@@ -155,8 +141,10 @@ body{
 
 .acercademi .contenido-seccion h3{
 	transform: uppercase;
-	font-size: 20px;
+	font-size: 15px;
 	color: #484848;
+	letter-spacing: 2px;
+	font-weight: 100;
 
 }
 .acercademi .contenido-seccion .especial{
@@ -189,6 +177,211 @@ body{
 	display: block;
 	font-weight: bold;
 	margin: 8px 0;
+	color: #333;
 }
+
+/*SECCION HABILIDADES*/
+
+.habilidades{
+	padding: 80px 0 100px 0;
+	text-align: center;
+	background: url("../img/jackson-sophat-_t-l5FFH8VA-unsplash.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	color: #484848;
+
+}
+.habilidades .contenido-seccion{
+	max-width: 1000px;
+	margin: auto;
+	padding: 0 10px;
+}
+
+.habilidades .contenido-seccion .fila{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+
+}
+.habilidades .contenido-seccion .fila .col{
+	width: 47%;
+	text-align: left;
+}
+.habilidades .contenido-seccion .fila .col .cont-barra{
+	display: flex;
+	align-items: center;
+}
+.habilidades .contenido-seccion .barra{
+	display: flex;
+	border: 1px solid #333333;
+	padding: 2px;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+.habilidades .contenido-seccion .barra .e{
+	background-color: rgb(255, 255, 255);
+	width: 20px;
+	height: 30px;
+	margin-right: 2px;
+}
+
+/*SECCION RESUMEN*/
+.resumen{
+	background-color: #FCE8ED;
+	padding: 80px 0 100px 0;
+	text-align: center;
+}
+.resumen .contenido-seccion{
+	max-width: 1000px;
+	margin: auto;
+	padding: 0 10px;
+}
+.resumen .contenido-seccion h3{
+	text-transform: capitalize;
+	font-size: 30px;
+}
+.resumen .contenido-seccion .info{
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.resumen .contenido-seccion .info .col{
+	width: 45%;
+
+}
+.resumen .contenido-seccion .info .col .titulo{
+	display: inline-block;
+	color: #333;
+	font-weight: bold;
+	border: 2px solid #bab9b9;
+	padding: 10px;
+}
+.resumen .contenido-seccion .info .col table{
+	margin-top: 30px;
+	border-collapse: collapse;
+}
+
+.resumen .contenido-seccion .info .col table .datos{
+	width: 40%;
+	border-bottom: 1px solid #bab9b9;
+}
+.resumen .contenido-seccion .info .col table h4{
+	margin-top: 10px;
+	color: #333333;
+}
+.resumen .contenido-seccion .info .col table h3{
+	font-size: 20px;
+	margin-bottom: 5px;
+	color: #333333;
+}
+.resumen .contenido-seccion .info .col table p{
+	font-size: 14px;
+}
+.resumen .contenido-seccion .info .col table .promedio{
+	display: block;
+	color: #484848;
+	margin-top: 10px;
+	font-weight: bold;
+}
+.resumen .contenido-seccion .info .col table .descripcion{
+	border-left: 1px solid #bab9b9;
+	padding-left: 20px;
+	color: #484848;
+}
+
+/*SECCION CONTACTO*/
+
+.contacto{
+	background: url(../img/email-campaign/pana.jpg);
+	background-repeat: no-repeat;
+	padding: 50px 0 50px 0;
+	text-align: right;
+}
+.contacto .contenido-seccion{
+	max-width: 1000px;
+	margin: auto;
+	padding: 0 10px;
+	
+}
+.contacto .contenido-seccion h3{
+	text-transform: uppercase;
+	font-size: 30px;
+}
+.contacto .contenido-seccion .fila{
+	display: inline-block;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+.contacto .contenido-seccion .fila .col{
+	margin-top: 10px;
+}
+.contacto .contenido-seccion .fila .col h2{
+	font-size: 15px;
+	color: #484848;
+}
+
+.redes a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #484848;
+	color: #FCE8ED;
+	border-radius: 50%;
+	width: 30px;
+	line-height: 30px;
+	margin: 0 5px;
+	transition: .3s;
+}
+
+.redes a:hover{
+	color: #FCE8ED;
+	background-color: #333333;
+	box-shadow: 0 0 30px #484848;
+}
+
+/*SECCION RESPONSIVE*/
+@media screen and (max-width:800px){
+	.habilidades .contenido-seccion .fila{
+		display: block;
+	}
+	.habilidades .contenido-seccion .fila .col{
+		width: 100%;
+		text-align: center;
+	}
+	.habilidades .contenido-seccion .fila .col .barra{
+		justify-content: center;
+	}
+	.acercademi .contenido-seccion .fila{
+		display: block;
+	}
+	.acercademi .contenido-seccion .fila .col{
+		width: 80%;
+		margin: auto;
+		margin-top: 20px;
+	}
+	.resumen .contenido-seccion .info{
+		display: block;
+	}
+	.resumen .contenido-seccion .info .col{
+		width: 90%;
+		margin: auto;
+	}
+	.resumen .contenido-seccion .info .col .titulo{
+		display: block;
+		text-align: center;
+		color: #333333;
+	}
+	.resumen .contenido-seccion .info .col table{
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+	.contacto .contenido-seccion .fila{
+		display: block;
+	}
+
+}
+
 
 
